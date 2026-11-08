@@ -64,10 +64,3 @@
                 menuToggle.setAttribute("aria-label", "Open navigation menu");
             });
         });
-
-        document.querySelector("#contact-form").addEventListener("submit", (event) => {
-            event.preventDefault();
-            const status = document.querySelector("#form-status");
-            if (!event.currentTarget.reportValidity()) return;
-            status.textContent = "Your details are valid, but this form is not connected to an email or submission service yet. Please add Soev Eye Africa’s official contact details to enable delivery.";
-        });
